@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="0%" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_total"
+        android:layout_marginTop="10dp"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/button_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start"
+        android:layout_toRightOf="@id/button_start"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start"
+        android:layout_toRightOf="@id/button_pause"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start"
+        android:layout_toRightOf="@id/button_delete"
+        android:text="重新下载" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/button_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView_total_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="0%" />
+
+    <Button
+        android:id="@+id/button_start_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_total_2"
+        android:layout_marginTop="10dp"
+        android:text="开始" />
+
+    <Button
+        android:id="@+id/button_pause_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start_2"
+        android:layout_toRightOf="@id/button_start_2"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/button_delete_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start_2"
+        android:layout_toRightOf="@id/button_pause_2"
+        android:text="删除" />
+
+    <Button
+        android:id="@+id/button_reset_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button_start_2"
+        android:layout_toRightOf="@id/button_delete_2"
+        android:text="重新下载" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/button_reset" />
+
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/image" />
+
+</RelativeLayout>
